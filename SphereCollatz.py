@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+import sys
 import math
+
 
 # ---------------------------
 # projects/collatz/Collatz.py
@@ -63,13 +65,13 @@ def collatz_eval (i, j) :
     maximum = 0
     current = 0
 
+    # range is smaller than a thousand, then compute by hand
     if j - i < 1000:
-        # range is smaller than a thousand, then compute by hand
         return max([cycle_length(x) for x in range(i, j + 1)])
     
     # get the cached values
     for k in range(i_f, j_f):
-        if meta_cache[k] > maxmium:
+        if meta_cache[k] > maximum:
             maximum = meta_cache[k]
 
     # get the starting digits that don't fit inside the range
@@ -114,3 +116,6 @@ def collatz_solve (r, w) :
         i, j = collatz_read(s)
         v    = collatz_eval(i, j)
         collatz_print(w, i, j, v)
+
+if __name__ == "__main__" :
+    collatz_solve(sys.stdin, sys.stdout)
