@@ -24,11 +24,25 @@ class TestCollatz (TestCase) :
     # read
     # ----
 
-    def test_read (self) :
+    def test_read_1 (self) :
         s    = "1 10\n"
         i, j = collatz_read(s)
         self.assertEqual(i,  1)
         self.assertEqual(j, 10)
+
+
+    def test_read_2 (self) :
+        s    = "0 0\n"
+        i, j = collatz_read(s)
+        self.assertEqual(i,  0)
+        self.assertEqual(j, 0)
+
+
+    def test_read_3 (self) :
+        s    = "-1 -1\n"
+        i, j = collatz_read(s)
+        self.assertEqual(i,  -1)
+        self.assertEqual(j, -1)
 
     # ----
     # eval
@@ -36,28 +50,40 @@ class TestCollatz (TestCase) :
 
     def test_eval_1 (self) :
         v = collatz_eval(1, 10)
-        self.assertEqual(v, 1)
+        self.assertEqual(v, 20)
 
     def test_eval_2 (self) :
         v = collatz_eval(100, 200)
-        self.assertEqual(v, 1)
+        self.assertEqual(v, 125)
 
     def test_eval_3 (self) :
         v = collatz_eval(201, 210)
-        self.assertEqual(v, 1)
+        self.assertEqual(v, 89)
 
     def test_eval_4 (self) :
         v = collatz_eval(900, 1000)
-        self.assertEqual(v, 1)
+        self.assertEqual(v, 174)
 
     # -----
     # print
     # -----
 
-    def test_print (self) :
+    def test_print_1 (self) :
         w = StringIO()
         collatz_print(w, 1, 10, 20)
         self.assertEqual(w.getvalue(), "1 10 20\n")
+
+
+    def test_print_2 (self) :
+        w = StringIO()
+        collatz_print(w, 0, 0, 0)
+        self.assertEqual(w.getvalue(), "0 0 0\n")
+
+
+    def test_print_3 (self) :
+        w = StringIO()
+        collatz_print(w, -1, 0, 1)
+        self.assertEqual(w.getvalue(), "-1 0 1\n")
 
     # -----
     # solve
@@ -67,7 +93,7 @@ class TestCollatz (TestCase) :
         r = StringIO("1 10\n100 200\n201 210\n900 1000\n")
         w = StringIO()
         collatz_solve(r, w)
-        self.assertEqual(w.getvalue(), "1 10 1\n100 200 1\n201 210 1\n900 1000 1\n")
+        self.assertEqual(w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
 
 # ----
 # main
