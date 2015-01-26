@@ -1,0 +1,4 @@
+.coverage
+.pyc
+RunCollatz.tmp
+__pycache__
