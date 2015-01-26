@@ -68,9 +68,8 @@ def collatz_eval (i, j) :
         return max([cycle_length(x) for x in range(i, j + 1)])
     
     # get the cached values
-    for k in range(i_f, j_f):
-        if meta_cache[k] > maxmium:
-            maximum = meta_cache[k]
+    if i_f < j_f:
+        maximum = max([meta_cache[x] for x in range(i_f, j_f)])
 
     # get the starting digits that don't fit inside the range
     for k in range(i, i_f * 1000 + 1):
