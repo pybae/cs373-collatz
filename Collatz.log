@@ -1,0 +1,47 @@
+commit a94a8f32b9e9ae375a2889097a0e6af398f553b5
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Mon Jan 26 17:11:26 2015 -0600
+
+    done with html
+
+commit 221828ee4f49e6c4332c56d6d6ed3a140fd2dadd
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Mon Jan 26 17:10:51 2015 -0600
+
+    added one more test
+
+commit 2951cce79dfcf4311ad77c4949944cd058112f7a
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Mon Jan 26 17:08:30 2015 -0600
+
+    optimized solution a bit
+
+commit da0aa50ab365dd2e4a1960a260ab57c5a3d27dda
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Mon Jan 26 16:29:55 2015 -0600
+
+    done with caching
+
+commit 6b50cd4f3784c86776f8c68c40e6d84b3d02f6c4
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Mon Jan 26 15:16:17 2015 -0600
+
+    wrote more tests for cycle_length
+
+commit 3743aa54fccce07fdc801b14bc28404315c68015
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Mon Jan 26 15:09:24 2015 -0600
+
+    removed junk
+
+commit f869770def411c356e23282a51bcd1ad2c6b0bb5
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Mon Jan 26 15:08:25 2015 -0600
+
+    done with the naive solution
+
+commit 687f7f436cb2d4ff6911dc9353f34798bfda6881
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Mon Jan 26 14:04:10 2015 -0600
+
+    first commit
