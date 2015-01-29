@@ -53,37 +53,36 @@ def collatz_eval (i, j) :
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-
-    assert (i > 0 and j > 0)
+    
+    assert(i > 0 and j > 0)
 
     i, j = sorted([i, j])
     i_f = int(math.ceil(i / 1000))
     j_f = j // 1000
 
+    assert(0 <= i_f < 1000 and 0 <= j_f < 1000)
+
     maximum = 0
     current = 0
 
+    # range is smaller than a thousand, then compute by hand
     if j - i < 1000:
-        # range is smaller than a thousand, then compute by hand
         return max([cycle_length(x) for x in range(i, j + 1)])
-    
+
     # get the cached values
     if i_f < j_f:
         maximum = max([meta_cache[x] for x in range(i_f, j_f)])
 
     # get the starting digits that don't fit inside the range
     for k in range(i, i_f * 1000 + 1):
-        current = cycle_length(k)
-        if current > maximum:
-            maximum = current
+        maximum = max(cycle_length(k), maximum)
 
     # get the ending digits that don't fit inside the range
     for k in range(j_f * 1000, j + 1):
-        current = cycle_length(k)
-        if current > maximum:
-            maximum = current
+        maximum = max(cycle_length(k), maximum)
 
-    assert (maximum > 0)
+    assert(maximum > 0)
+
     return maximum
     
 # -------------
