@@ -1,5 +1,5 @@
 .coverage
-.pyc
+*.pyc
 RunCollatz.tmp
 __pycache__
 temp
