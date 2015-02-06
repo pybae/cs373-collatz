@@ -59,6 +59,7 @@ def collatz_eval (i, j) :
     assert(i > 0 and j > 0)
 
     i, j = sorted([i, j])
+    i = max(i, (j // 2) + 1)
     i_f = int(math.ceil(i / 1000))
     j_f = j // 1000
 

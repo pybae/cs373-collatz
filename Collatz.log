@@ -1,3 +1,27 @@
+commit 725596edc6fcded33276f6b5ac429bd5e3698764
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Sat Jan 31 19:54:35 2015 -0600
+
+    updated test results
+
+commit bb621a5fd74010128e89fd81edcddade58c9a6be
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Fri Jan 30 20:26:07 2015 -0600
+
+    added log again
+
+commit 9624313da3b5f1c17f2d4c778aabb9b00b2d250f
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Fri Jan 30 20:25:21 2015 -0600
+
+    updated solution to use tighter bounds
+
+commit cc70ae2797007a89281e2cda6dad8690dbcdabf8
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Thu Jan 29 15:54:01 2015 -0600
+
+    done with log and updated my eval func
+
 commit 04a6dddb01ce94c36c6fe16c5ad56f9eac739de1
 Author: Paul Bae <pbae@utexas.edu>
 Date:   Mon Jan 26 17:17:27 2015 -0600
