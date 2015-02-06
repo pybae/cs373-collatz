@@ -1,3 +1,22 @@
+commit 8f2c0d4a330dccb65ca02cf47a7edb9cda9491ae
+Merge: 75b0531 42027f9
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Fri Feb 6 01:14:57 2015 -0600
+
+    Merge branch 'master' of https://github.com/pybae/cs373-collatz
+
+commit 75b05315fd0ae616ffb529e33f0fb37e900d2108
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Fri Feb 6 01:12:53 2015 -0600
+
+    made cache smaller
+
+commit 42027f9377245a3f763891dc44c129d7486a4224
+Author: Paul Bae <pbae@utexas.edu>
+Date:   Sat Jan 31 19:55:35 2015 -0600
+
+    added log again
+
 commit 725596edc6fcded33276f6b5ac429bd5e3698764
 Author: Paul Bae <pbae@utexas.edu>
 Date:   Sat Jan 31 19:54:35 2015 -0600
