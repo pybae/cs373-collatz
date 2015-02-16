@@ -1,0 +1,25 @@
+pbb388
+5/5 gitahub setup and commit log
+5/5 github issues
+15/15 sphere and cache
+15/15 average of 3 unit test per function
+14/15 100 lines of acceptance test
+10/10 Pydoc
+5/5 Google Form with time estimate.
+2/0 bonus and panalty points
+57/70 total
+comment:
+100 Lines only.
+1 day late submission -14
+Bonus:
+    aa34474 Passed
+    ac39899 Passed
+    adishman Passed
+    af9869 Passed
+    ag42778 Failed
+Penalty:
+    ng6978 Passed
+    nrc523 Passed
+    ojl85 Passed
+    om3799 Passed
+    pbb388 Passed
